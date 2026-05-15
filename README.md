@@ -1,7 +1,7 @@
-````md
 # Fashion MNIST CNN From Scratch
 
 ## Project Overview
+
 This project implements a basic Convolutional Neural Network (CNN) from scratch using Python and NumPy for classifying Fashion MNIST images.
 
 The CNN learns image features such as edges, textures, and patterns using convolution operations and predicts the correct clothing category.
@@ -9,6 +9,7 @@ The CNN learns image features such as edges, textures, and patterns using convol
 ---
 
 # Objective
+
 The objectives of this project are:
 
 - Implement Convolution Layer
@@ -69,31 +70,31 @@ Softmax Output Layer
 
 # Project Folder Structure
 
-```text
-UE24CS645BC2_<PES1PG25CS095>_Fashion_MNIST_CNN
-│
-├── cnn.py
-├── layers.py
-├── main.py
-├── utils.py
-├── README.md
-├── requirements.txt
-├── accuracy_graph.png
-├── loss_graph.png
+UE24CS645BC2_PES1PG25CS095_Fashion_MNIST_CNN  
+│  
+├── cnn.py  
+├── layers.py  
+├── main.py  
+├── utils.py  
+├── README.md  
+├── requirements.txt  
+├── accuracy_graph.png  
+├── loss_graph.png  
 
+---
 
 # File Description
 
-| File               | Description                                       |
-| ------------------ | ------------------------------------------------- |
-| cnn.py             | Main CNN training and testing program             |
-| layers.py          | Contains convolution, pooling, and softmax layers |
-| main.py            | Loads and visualizes dataset                      |
-| utils.py           | Helper functions                                  |
-| README.md          | Project documentation                             |
-| requirements.txt   | Required libraries                                |
-| accuracy_graph.png | Accuracy graph                                    |
-| loss_graph.png     | Loss graph                                        |
+| File | Description |
+|---|---|
+| cnn.py | Main CNN training and testing program |
+| layers.py | Contains convolution, pooling, and softmax layers |
+| main.py | Loads and visualizes dataset |
+| utils.py | Helper functions |
+| README.md | Project documentation |
+| requirements.txt | Required libraries |
+| accuracy_graph.png | Accuracy graph |
+| loss_graph.png | Loss graph |
 
 ---
 
@@ -103,10 +104,10 @@ The convolution layer extracts important image features using filters.
 
 Features detected:
 
-* edges
-* curves
-* textures
-* patterns
+- edges
+- curves
+- textures
+- patterns
 
 ---
 
@@ -116,9 +117,9 @@ The MaxPooling layer reduces image dimensions and keeps important features.
 
 Advantages:
 
-* reduces computation
-* removes unnecessary details
-* reduces overfitting
+- reduces computation
+- removes unnecessary details
+- reduces overfitting
 
 ---
 
@@ -142,10 +143,10 @@ The forward pass moves the input image through all CNN layers to generate predic
 
 Steps:
 
-1. Convolution
-2. Pooling
-3. Flattening
-4. Classification
+1. Convolution  
+2. Pooling  
+3. Flattening  
+4. Classification  
 
 ---
 
@@ -155,7 +156,7 @@ An epoch means one complete pass of the training dataset through the CNN.
 
 This project uses:
 
-* 5 epochs
+- 5 epochs
 
 ---
 
@@ -166,18 +167,18 @@ Accuracy measures the percentage of correct predictions.
 ## Accuracy Across Epochs
 
 | Epoch | Accuracy |
-| ----- | -------- |
-| 1     | 60%      |
-| 2     | 66%      |
-| 3     | 72%      |
-| 4     | 77%      |
-| 5     | 82%      |
+|---|---|
+| 1 | 60% |
+| 2 | 66% |
+| 3 | 72% |
+| 4 | 77% |
+| 5 | 82% |
 
 ### Why Accuracy Increases
 
-* CNN learns important image patterns
-* Feature extraction improves
-* Classification becomes more accurate
+- CNN learns important image patterns
+- Feature extraction improves
+- Classification becomes more accurate
 
 The graph gradually increases, showing successful learning.
 
@@ -187,24 +188,24 @@ The graph gradually increases, showing successful learning.
 
 Loss measures prediction error.
 
-* High loss → poor predictions
-* Low loss → better predictions
+- High loss → poor predictions
+- Low loss → better predictions
 
 ## Loss Across Epochs
 
 | Epoch | Loss |
-| ----- | ---- |
-| 1     | 1.8  |
-| 2     | 1.4  |
-| 3     | 1.1  |
-| 4     | 0.8  |
-| 5     | 0.5  |
+|---|---|
+| 1 | 1.8 |
+| 2 | 1.4 |
+| 3 | 1.1 |
+| 4 | 0.8 |
+| 5 | 0.5 |
 
 ### Why Loss Decreases
 
-* CNN predictions improve during training
-* Error reduces gradually
-* Model performance becomes better
+- CNN predictions improve during training
+- Error reduces gradually
+- Model performance becomes better
 
 The graph gradually decreases over epochs.
 
@@ -212,12 +213,12 @@ The graph gradually decreases over epochs.
 
 # Technologies Used
 
-| Technology       | Purpose                |
-| ---------------- | ---------------------- |
-| Python           | Programming language   |
-| NumPy            | Numerical computations |
-| TensorFlow/Keras | Dataset loading        |
-| Matplotlib       | Graph visualization    |
+| Technology | Purpose |
+|---|---|
+| Python | Programming language |
+| NumPy | Numerical computations |
+| TensorFlow/Keras | Dataset loading |
+| Matplotlib | Graph visualization |
 
 ---
 
@@ -225,9 +226,7 @@ The graph gradually decreases over epochs.
 
 Install required libraries:
 
-```bash
 pip install tensorflow numpy matplotlib
-```
 
 ---
 
@@ -235,15 +234,11 @@ pip install tensorflow numpy matplotlib
 
 ## Step 1 — Activate Virtual Environment
 
-```bash
-venv\Scripts\activate
-```
+venv\\Scripts\\activate
 
 ## Step 2 — Run CNN Program
 
-```bash
 python cnn.py
-```
 
 ---
 
@@ -251,38 +246,34 @@ python cnn.py
 
 The program generates:
 
-* Epoch-wise accuracy
-* Epoch-wise loss
-* Accuracy graph
-* Loss graph
+- Epoch-wise accuracy
+- Epoch-wise loss
+- Accuracy graph
+- Loss graph
 
 Generated files:
 
-```text
-accuracy_graph.png
-loss_graph.png
-```
+accuracy_graph.png  
+loss_graph.png  
 
 ---
 
 # Sample Output
 
-```text
-Epoch 1 Accuracy: 60%
-Epoch 1 Loss: 1.8
+Epoch 1 Accuracy: 60%  
+Epoch 1 Loss: 1.8  
 
-Epoch 2 Accuracy: 66%
-Epoch 2 Loss: 1.4
+Epoch 2 Accuracy: 66%  
+Epoch 2 Loss: 1.4  
 
-Epoch 3 Accuracy: 72%
-Epoch 3 Loss: 1.1
+Epoch 3 Accuracy: 72%  
+Epoch 3 Loss: 1.1  
 
-Epoch 4 Accuracy: 77%
-Epoch 4 Loss: 0.8
+Epoch 4 Accuracy: 77%  
+Epoch 4 Loss: 0.8  
 
-Epoch 5 Accuracy: 82%
-Epoch 5 Loss: 0.5
-```
+Epoch 5 Accuracy: 82%  
+Epoch 5 Loss: 0.5  
 
 ---
 
@@ -290,16 +281,17 @@ Epoch 5 Loss: 0.5
 
 This project successfully demonstrates:
 
-* CNN implementation from scratch
-* convolution operation
-* pooling operation
-* Fashion MNIST image classification
-* accuracy improvement
-* loss reduction
-* graph visualization
+- CNN implementation from scratch
+- convolution operation
+- pooling operation
+- Fashion MNIST image classification
+- accuracy improvement
+- loss reduction
+- graph visualization
 
 The CNN gradually learns image patterns and improves prediction performance over multiple epochs.
 
+---
 
 # Accuracy Graph
 
